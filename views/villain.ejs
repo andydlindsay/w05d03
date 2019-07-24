@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Villain</title>
+</head>
+
+<body>
+  <a href="/villains">Home</a>
+  <h2>Just one villain (more than enough)</h2>
+  <h2>Alias: <%= villain.alias %></h2>
+  <h2>Movie: <%= villain.movie %></h2>
+  <form method="POST" action="/villains/<%= villain.id %>">
+    <label for="new-alias">New Alias</label>
+    <input type="text" id="new-alias" name="newAlias" />
+    <br />
+    <button type="submit">Edit Villain</button>
+  </form>
+  <form method="POST" action="/villains/<%= villain.id %>/delete">
+    <button type="submit">Delete Villain</button>
+  </form>
+</body>
+
+</html>
