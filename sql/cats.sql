@@ -10,6 +10,6 @@ INSERT INTO movie_villains
     (name, breed)
 VALUES
     ('Fred', 'Persian'),
-    ('Joni', 'Siamese'),
+    ('Joni', 'Maine Coon'),
     ('Tuna', 'Calico'),
     ('Precious', 'DSH');
